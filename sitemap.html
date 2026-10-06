@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boracay Sitemap</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fbfc;
+            color: #222;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 32px;
+            color: #087ea4;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #777;
+        }
+
+        .sitemap {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .home {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .home a {
+            display: inline-block;
+            background: #087ea4;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .section {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            color: #087ea4;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            list-style: none;
+        }
+
+        .section li {
+            margin: 10px 0;
+        }
+
+        .section a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .section a:hover {
+            color: #087ea4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #888;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            .sections {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Boracay</h1>
+        <p>Tourism Website Sitemap</p>
+    </header>
+
+    <main class="sitemap">
+
+        <div class="home">
+            <a href="#">Home</a>
+        </div>
+
+        <div class="sections">
+
+            <div class="section">
+                <h2>About</h2>
+                <ul>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Explore</h2>
+                <ul>
+                    <li><a href="#">White Beach</a></li>
+                    <li><a href="#">Puka Beach</a></li>
+                    <li><a href="#">Willy's Rock</a></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Activities</h2>
+                <ul>
+                    <li><a href="#">Island Hopping</a></li>
+                    <li><a href="#">Water Sports</a></li>
+                    <li><a href="#">Nightlife</a></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Travel</h2>
+                <ul>
+                    <li><a href="#">Getting There</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Transportation</a></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Food</h2>
+                <ul>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Local Food</a></li>
+                    <li><a href="#">Food Guide</a></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>More</h2>
+                <ul>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Boracay Tourism</p>
+    </footer>
+
+</body>
+</html>
