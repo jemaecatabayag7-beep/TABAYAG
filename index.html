@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Paradise - Tourism Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007f86;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #005b63;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 12px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background-color: #00a6a6;
+            border-radius: 5px;
+        }
+
+        .hero {
+            min-height: 400px;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.35),
+                rgba(0, 0, 0, 0.35)),
+                url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        section {
+            padding: 45px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #007f86;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+            padding-bottom: 18px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #007f86;
+            margin: 12px;
+        }
+
+        .card p {
+            padding: 0 15px;
+        }
+
+        .travel-guide {
+            background-color: #d9f2ef;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 20px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            padding: 12px;
+            background-color: #007f86;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #005b63;
+        }
+
+        footer {
+            background-color: #005b63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            nav a {
+                padding: 8px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Explore Paradise</h1>
+        <p>Discover the Beauty of Nature and Culture</p>
+    </header>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT THE PLACE</a>
+        <a href="#attractions">ATTRACTIONS</a>
+        <a href="#activities">ACTIVITIES</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#food">FOOD & CULTURE</a>
+        <a href="#guide">TRAVEL GUIDE</a>
+        <a href="#accommodations">ACCOMMODATIONS</a>
+        <a href="#events">EVENTS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <h2>Welcome to Paradise!</h2>
+        <p>Experience beautiful beaches, amazing adventures,
+            delicious food, and rich culture.</p>
+    </div>
+
+    <section id="about">
+        <h2>About the Place</h2>
+        <p>
+            Welcome to our beautiful destination, a place filled
+            with natural wonders, friendly people, rich traditions,
+            and unforgettable experiences. Discover its history,
+            location, and unique beauty.
+        </p>
+    </section>
+
+    <section id="attractions">
+        <h2>Popular Attractions</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Beautiful beach">
+                <h3>Beautiful Beaches</h3>
+                <p>Enjoy the clear water, white sand, and relaxing views.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="Majestic mountains">
+                <h3>Majestic Mountains</h3>
+                <p>Explore mountains and enjoy breathtaking scenery.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=600&q=80" alt="Waterfall in nature">
+                <h3>Waterfalls</h3>
+                <p>Discover refreshing waterfalls surrounded by nature.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities">
+        <h2>Things to Do</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Island Hopping</h3>
+                <p>Visit nearby islands and enjoy the ocean.</p>
+            </div>
+            <div class="card">
+                <h3>Hiking</h3>
+                <p>Explore scenic trails and beautiful landscapes.</p>
+            </div>
+            <div class="card">
+                <h3>Cultural Tours</h3>
+                <p>Learn about local history, traditions, and people.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Photo Gallery</h2>
+        <p>Take a look at the beauty of our destination.</p>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=600&q=80" alt="Tropical nature">
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80" alt="Coastal scenery">
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=80" alt="Green landscape">
+            </div>
+        </div>
+    </section>
+
+    <section id="food">
+        <h2>Food & Culture</h2>
+        <p>
+            Experience local delicacies, traditional music,
+            colorful festivals, handmade crafts, and the warm
+            hospitality of the community.
+        </p>
+    </section>
+
+    <section id="guide" class="travel-guide">
+        <h2>Travel Guide</h2>
+        <p><strong>Transportation:</strong> Travel by bus, car, boat, or plane, depending on your destination.</p>
+        <p><strong>Best Time to Visit:</strong> Check the local weather before planning your trip.</p>
+        <p><strong>Travel Tips:</strong> Bring sunscreen, comfortable clothes, water, and cash.</p>
+    </section>
+
+    <section id="accommodations">
+        <h2>Accommodations</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Hotels</h3>
+                <p>Comfortable rooms and convenient facilities.</p>
+            </div>
+            <div class="card">
+                <h3>Beach Resorts</h3>
+                <p>Relax near the sea and enjoy scenic views.</p>
+            </div>
+            <div class="card">
+                <h3>Homestays</h3>
+                <p>Experience local living and hospitality.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2>Events & Festivals</h2>
+        <p>
+            Join local festivals, cultural celebrations,
+            community events, and seasonal activities.
+            Check official announcements for event dates.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Send us a message!</p>
+
+        <form class="contact-form"
+              onsubmit="event.preventDefault(); alert('Thank you for your message! This is a demo form.');">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Explore Paradise | Tourism Website</p>
+        <p>Discover, Explore, and Enjoy!</p>
+    </footer>
+
+</body>
+</html>
